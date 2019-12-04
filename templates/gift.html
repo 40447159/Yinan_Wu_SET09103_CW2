@@ -1,0 +1,182 @@
+{% extends "header.html" %}
+  {% block content %}
+<br>
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>{% block title %} gift {% endblock %}</title>
+<style>
+        *{margin: 0;padding: 0px}
+ ul{
+         width: 500px;
+         height: 50px;
+         outline: 1px solid powderblue;
+         }
+         ul li{
+         width: 50%;
+         height: 100%;
+         outline: 1px solid powderblue;
+         text-align: center;
+         float: left;
+         line-height: 50px;
+         list-style: none;
+         background: powderblue;
+             text-decoration-color: white;
+         }
+         ul ol li{
+         width: 100%;
+             /*变化*/
+         height: 0;
+               text-align: left;
+         background: greenyellow;
+         outline: 1px solid white;
+         transition: all linear 1s;
+         overflow:hidden;
+         }
+         ul ol li a{
+         color: white;
+         text-decoration: none;
+         }
+         ul li:hover ol li{
+         height: 50px; /*变化*/
+         transition: all linear 1s;
+         }
+         ul ol li:hover{
+         background: yellow;
+         }
+    </style>
+
+    <script type="text/javascript">
+function Show_Hidden(trid){
+    if(trid.style.display=="block"){
+        trid.style.display='none';
+    }else{
+        trid.style.display='block';
+    }
+}
+</script>
+ </head>
+<body>
+    <body background="../static/image/f.jpg" ></body>
+
+<h1>  Gifts </h1>
+<br><br>
+<h2>A gift for </h2>
+<br><br>
+ <ul>
+   <li> Important people
+         <ol>
+             <li><a href="#" onclick="Show_Hidden(tr1)">Girl friend</a></li>
+             <li><a href="#" onclick="Show_Hidden(tr2)" >Wife</a></li>
+             <li><a href="#" onclick="Show_Hidden(tr3)">Mother</a> </li>
+         </ol>
+     </li>
+     <li> Certain occasion
+         <ol>
+             <li><a href="#"onclick="Show_Hidden(tr4)" >Birthday</a></li>
+        <li><a href="#" onclick="Show_Hidden(tr5)">memorial day</a></li>
+        <li><a href="#" onclick="Show_Hidden(tr6)" >Festival</a></li>
+         </ol>
+     </li>
+</ul>
+
+<div style=" float:right;"><table>
+<tr id="tr1" style="display:none;">
+<td>
+     <img src="../static/image/t1.jpg" width="400px" height="350px" >
+</td>
+</tr>
+    <tr id="tr2" style="display: none;">
+        <td>
+         <img src="../static/image/t2.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+<tr id="tr3" style="display: none;">
+        <td>
+         <img src="../static/image/t3.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+<tr id="tr4" style="display: none;">
+        <td>
+         <img src="../static/image/t4.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+    <tr id="tr5" style="display: none;">
+        <td>
+         <img src="../static/image/t5.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+    <tr id="tr6" style="display: none;">
+        <td>
+         <img src="../static/image/t6.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+</table></div>
+
+<br>
+<br><br><br><p align="right" style="font-size: 50px"> THERE WILL <br>TELL YOU THE ANSWER</p>
+<br><br><br><br><br><br><br>
+<h2>LATEST</h2>
+<ul>
+   <li> NEW
+         <ol>
+             <li><a href="#" onclick="Show_Hidden(tr7)">eye shadow</a></li>
+             <li><a href="#" onclick="Show_Hidden(tr8)" >highlither</a></li>
+             <li><a href="#" onclick="Show_Hidden(tr9)">perfume</a> </li>
+         </ol>
+     </li>
+     <li> SPECICAL
+         <ol>
+             <li><a href="#"onclick="Show_Hidden(tr10)" >frozen</a></li>
+        <li><a href="#" onclick="Show_Hidden(tr11)">memorial day</a></li>
+        <li><a href="#" onclick="Show_Hidden(tr12)" >Festival</a></li>
+         </ol>
+     </li>
+</ul>
+
+<div style=" float:right;"><table>
+<tr id="tr7" style="display:none;">
+<td>
+     <img src="../static/image/t8.jpg" width="400px" height="350px" >
+</td>
+</tr>
+    <tr id="tr8" style="display: none;">
+        <td>
+         <img src="../static/image/t9.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+<tr id="tr9" style="display: none;">
+        <td>
+         <img src="../static/image/t10.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+<tr id="tr10" style="display: none;">
+        <td>
+         <img src="../static/image/t7.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+    <tr id="tr11" style="display: none;">
+        <td>
+         <img src="../static/image/t11.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+    <tr id="tr12" style="display: none;">
+        <td>
+         <img src="../static/image/t12.jpg" width="400px" height="350px" >
+        </td>
+    </tr>
+</table></div>
+
+<br>
+<br><br><br<br><br><br><br><br><br>
+<br><br><br<br><br><br><br><br><br><br><br><br<br>
+
+<a class='btn btn-primary ' href="/">return home </a>
+
+</body>
+</html>
+{% endblock %}

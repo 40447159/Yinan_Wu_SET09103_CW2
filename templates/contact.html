@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>contact us</title>
+	<link rel="stylesheet" id="templatecss" type="text/css" href="../static/css/contact.css">
+</head>
+<body background="../static/image/404.jpg">
+<body>
+	<form action="" method="post" class="basic-grey">
+		<h1>Contact Form
+			<span>Please fill all the texts in the fields.</span>
+		</h1>
+		<label>
+			<span> Name :</span>
+			<input id="name" type="text" name="name" placeholder="Your Full Name" />
+		</label>
+		<label>
+			<span> Email :</span>
+			<input id="email" type="email" name="email" placeholder="Valid Email Address" />
+		</label>
+
+		<label>
+			<span>Message :</span>
+			<textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+		</label>
+		<label>
+			<span>&nbsp;</span>
+			<a class='btn btn-primary' href="/">send</a>
+
+		</label>
+	</form>
+	<script>
+		function changeStyle() {
+	   var template = document.getElementById("template");
+     var index = template.selectedIndex;
+	   var templatevalue = template.options[index].value;
+	   var templatecss = document.getElementById("templatecss");
+	   templatecss.setAttribute("href","css/" + templatevalue + ".css");
+	   document.getElementsByTagName("form")[0].setAttribute("class",templatevalue);
+	 }
+	</script>
+</body>
+</html>

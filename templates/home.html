@@ -1,0 +1,226 @@
+{%  extends "header.html"  %}
+{% block content%}
+<br>
+<br>
+<br>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/pic.css"/>
+    <title>{% block title %} home -- {% endblock %}Home</title>
+<style type="text/css">
+     .div_photo{
+         height: 300px;
+         width:20%;
+         float:left;
+         margin-left: 30px;
+         margin-top: 30px;
+     }
+</style>
+       <style type="text/css">
+        body
+        {
+            font-family: Tahoma, Arial;
+        }
+
+        #content
+        {
+            margin: 10px auto 0;
+        }
+
+        #content li, #content .wrapper, #content li img, #content li span
+        {
+            width: 310px;
+            height: 300px;
+        }
+
+        #content li
+        {
+            cursor: pointer;
+            -webkit-perspective: 4000px;
+            width: 310px;
+            height: 300px;
+            float: left;
+            margin-left: 60px;
+            /*box-shadow: 2px 2px 5px #888888;*/
+
+        }
+
+        #content .wrapper
+        {
+            position: relative;
+            -webkit-transform-style: preserve-3d;
+            -webkit-transition: -webkit-transform .6s;
+        }
+
+        #content li img
+        {
+            top: 0;
+            border-radius: 3px;
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+            position: absolute;
+            -webkit-transform: translateZ(50px);
+            -webkit-transition: all .6s;
+        }
+
+        #content  li span
+        {
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(236, 241, 244, 1)), color-stop(100%, rgba(190, 202, 217, 1)));
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+            position: absolute;
+            -webkit-transform: rotateX(-90deg) translateZ(50px);
+            -webkit-transition: all .6s;
+            display: block;
+            top: 0;
+            text-align: left;
+            border-radius: 15px;
+            font-size: 12px;
+            padding: 10px;
+            width: 290px;
+            height: 80px;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+            box-shadow: none;
+        }
+
+        #content li span strong
+        {
+            display: block;
+            margin: .2em 0 .5em 0;
+            font-size: 20px;
+            font-family: "Oleo Script";
+        }
+
+        #content li:hover .wrapper
+        {
+            -webkit-transform: rotateX(95deg);
+        }
+
+        #content li:hover img
+        {
+            box-shadow: none;
+            border-radius: 15px;
+        }
+
+        #content li:hover span
+        {
+            box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 3px;
+        }
+
+
+   </style>
+</head>
+
+<body>}
+<body bgcolor="#ffb6c1"></body>
+<div class="photo" id="photo">
+        <!--//1-->
+        <input type="radio" name="btn" id="img1" checked/>
+        <div class="control">
+            <div class="image"><img src="../static/image/1.jpg"/></div>
+            <div class="nav">
+                <label for="img6" class="up leftjianbian"></label>
+                <label for="img2" class="down rightjianbian"></label>
+            </div>
+        </div>
+        <!--//2-->
+        <input type="radio" name="btn" id="img2"/>
+        <div class="control">
+            <div class="image"><img src="../static/image/2.jpg/"></div>
+            <div class="nav">
+                <label for="img1" class="up leftjianbian"></label>
+                <label for="img3" class="down rightjianbian">></label>
+            </div>
+        </div>
+        <!--//3-->
+        <input type="radio" name="btn" id="img3"/>
+        <div class="control">
+            <div class="image"><img src="../static/image/3.jpg"/></div>
+            <div class="nav">
+                <label for="img2" class="up leftjianbian"><</label>
+                <label for="img4" class="down rightjianbian">></label>
+            </div>
+        </div>
+        <!--//4-->
+        <input type="radio" name="btn" id="img4"/>
+        <div class="control">
+            <div class="image"><img src="../static/image/4.png" /></div>
+            <div class="nav">
+                <label for="img3" class="up leftjianbian"><</label>
+                <label for="img5" class="down rightjianbian">></label>
+            </div>
+        </div>
+        <!--//5-->
+        <input type="radio" name="btn" id="img5"/>
+        <div class="control">
+            <div class="image"><img src="../static/image/5.jpg"/></div>
+            <div class="nav">
+                <label for="img4" class="up leftjianbian"><</label>
+                <label for="img6" class="down rightjianbian">></label>
+            </div>
+        </div>
+        <!--//6-->
+        <input type="radio" name="btn" id="img6"/>
+        <div class="control">
+            <div class="image"><img src="../static/image/6.jpg"/></div>
+            <div class="nav">
+                <label for="img5" class="up leftjianbian"><</label>
+                <label for="img1" class="down rightjianbian">></label>
+            </div>
+        </div>
+        <div class="dots">
+            <label for="img1" class="dot" id="dot1"></label>
+            <label for="img2" class="dot" id="dot2"></label>
+            <label for="img3" class="dot" id="dot3"></label>
+            <label for="img4" class="dot" id="dot4"></label>
+            <label for="img5" class="dot" id="dot5"></label>
+            <label for="img6" class="dot" id="dot6"></label>
+        </div>
+    </div>
+<h1>                      propularity</h1>
+<dl>
+    <dt style=" font-size: 30px"><a href="/learn/">  -How to protect skin in usual day and night? </a></dt>
+    <br>
+    <dt style="font-size: 30px"><a href="/know/">    -What are the famous brands for cosmetics? </a></dt>
+    <br>
+    <dt style="font-size: 30px"><a href="/gift/">   -What gifts is best for my important people</a></dt>
+    <br>
+    <dt style="font-size: 30px"> <a href="/know/>">  -What do you need for making up in a simple way?</a></dt>
+</dl>
+<h1>   Latest</h1>
+<ul id="content">
+
+    <li>
+        <div class="wrapper">
+            <img src="../static/image/a.jpg">
+            <span class="information">
+              <strong>YSL Libre Parfum </strong>
+            </span>
+        </div>
+    </li>
+
+    <li>
+        <div class="wrapper">
+            <img src="../static/image/b.jpg">
+            <span class="information">
+              <strong>Chanel powder</strong>
+            </span>
+        </div>
+
+    </li>
+
+    <li>
+        <div class="wrapper">
+            <img src="../static/image/c.jpg">
+            <span class="information">
+              <strong>DIOR lipsticks</strong>
+            </span>
+        </div>
+
+    </li>
+
+</ul>
+{%  endblock  %}
+</body>
+</html>
